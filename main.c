@@ -51,7 +51,8 @@ char *tree2string(struct node_t *root)
 int main(int argc, char* argv[])
 {
     char* string;
-    struct node_t *root=string2tree("12345678");
+	// please input a string which can construct a complete binary tree
+    struct node_t *root=string2tree("1234567");
     string = tree2string(root);	
     printf("%s\n", string);
 }
