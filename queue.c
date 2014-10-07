@@ -36,18 +36,3 @@ int empty(queue *q)
 	if (q->count <= 0) return (1);
 	else return (0);
 }
-
-void print_queue(queue *q)
-{
-	int i,j;
-
-	i=q->first; 
-
-	while (i != q->last) {
-		printf("%c ",q->q[i]);
-		i = (i+1) % QUEUESIZE;
-	}
-
-	printf("%2d ",q->q[i]);
-	printf("\n");
-}
