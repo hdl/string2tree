@@ -32,7 +32,7 @@ struct node_t *string2tree(char *string)
 char *tree2string(struct node_t *root)
 {
 	int i=0; 
-	char *string=malloc(sizeof(char));
+	char *string=malloc(sizeof(char) * NODESIZE);
 	queue value_queue;
 	init_queue(&value_queue);
 	enqueue(&value_queue, root->value);
